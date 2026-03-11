@@ -66,6 +66,7 @@ h3 {
     flex-wrap: wrap;
     gap: 20px;
     margin-bottom: 30px;
+    justify-content: center;
 }
 
 .checkbox-group {
@@ -114,6 +115,13 @@ input:focus {
     font-weight: bold;
     cursor: pointer;
     
+    justify-content: center;
+    
+    
+}
+.btn{
+    display: flex;
+   justify-content: center;
 }
 
 .submit-btn:hover {
