@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SUPPLIER REGISTRATION FORM</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <header>
+        <h1>Supplier Registration Form</h1>
+        <p>Be part of the chain so together we supply the world</p>
+      </header>
+
+      <form action="#" method="POST">
+        <section class="form-section">
+          <h3>Company Information</h3>
+          <div class="grid-layout">
+            <div class="form-group">
+              <label>Legal Business Name</label>
+              <input
+                type="text"
+                placeholder="e.g. Ismail's Tech Solutions"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label>Tax ID / VAT Number</label>
+              <input type="text" placeholder="49-999008" required />
+            </div>
+            <div class="form-group full-width">
+              <label>Company Website</label>
+              <input type="url" placeholder="https://" />
+            </div>
+          </div>
+        </section>
+
+        <section class="form-section">
+          <h3>Primary Contact</h3>
+          <div class="grid-layout">
+            <div class="form-group">
+              <label>First Name</label>
+              <input type="text" required />
+            </div>
+            <div class="form-group">
+              <label>Last Name</label>
+              <input type="text" required />
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" required />
+            </div>
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input type="tel" required />
+            </div>
+          </div>
+        </section>
+
+        <section class="form-section">
+          <h3>Business Category</h3>
+          <div class="flex-row">
+            <div class="checkbox-group">
+              <input type="checkbox" id="hw" /> <label for="hw">Hardware</label>
+            </div>
+            <div class="checkbox-group">
+              <input type="checkbox" id="sw" />
+              <label for="sw">Software/SaaS</label>
+            </div>
+            <div class="checkbox-group">
+              <input type="checkbox" id="log" />
+              <label for="log">Logistics</label>
+            </div>
+            <div class="checkbox-group">
+              <input type="checkbox" id="cons" />
+              <label for="cons">Consulting</label>
+            </div>
+          </div>
+        </section>
+
+        <button type="submit" class="submit-btn">Submit Application</button>
+      </form>
+    </div>
+  </body>
+</html>
