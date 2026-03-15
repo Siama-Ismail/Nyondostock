@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Registration Form</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+</head>
+<body>
+  <style>
+    .list-group{
+      border-radius: 20px; 
+    }
+  </style>
+    <div class="container mt-5 bg-dark">
+  <div class="row">
+    <aside class="col-md-3">
+      <div class="list-group shadow-sm mb-4">
+        <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+          <strong>Stock Categories</strong>
+          <div clsaa="list-group">
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">Electronics</a>
+        <a href="#" class="list-group-item list-group-item-action">Office Supplies</a>
+        <a href="#" class="list-group-item list-group-item-action">Hardware</a>
+        </div>
+      </div>
+
+      <div class="card shadow-sm border-info">
+        <div class="card-body">
+          <h6 class="card-title text-info">Registration Tip</h6>
+          <p class="card-text small text-muted">Ensure all SKU numbers match the physical barcode to avoid inventory mismatches.</p>
+        </div>
+      </div>
+    </aside>
+
+    <main class="col-md-9">
+      
+      <div class="card shadow-sm">
+        <div class="card-header bg-white">
+          <h4 class="mb-0">New Item Registration</h4>
+        </div>
+        <div class="card-body">
+          <form class="row g-3">
+            <div class="col-md-8">
+              <label class="form-label">Item Name</label>
+              <input type="text" class="form-control" placeholder="e.g. laptops and mouse">
+            </div>
+            
+            <div class="col-md-4">
+              <label class="form-label">SKU / Barcode</label>
+              <input type="text" class="form-control" placeholder="STK-00123">
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label">Category</label>
+              <select class="form-select">
+                <option selected>Choose...</option>
+                <option>Electronics</option>
+                <option>Furniture</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Supplier</label>
+              <input type="text" class="form-control" placeholder="Supplier Name">
+            </div>
+
+            <div class="col-md-4">
+              <label class="form-label">Initial Quantity</label>
+              <input type="number" class="form-control" value="0">
+            </div>
+            <div class="col-md-4">
+              <label class="form-label">Cost Price</label>
+              <div class="input-group">
+                <span class="input-group-text">$</span>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label class="form-label">Selling Price</label>
+              <div class="input-group">
+                <span class="input-group-text">$</span>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+
+            <hr class="my-4">
+
+            <div class="d-flex justify-content-end">
+              <button type="button" class="btn btn-outline-secondary me-2">Cancel</button>
+              <button type="submit" class="btn btn-primary px-4">Register Stock</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+ <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    
+</body>
+</html>
